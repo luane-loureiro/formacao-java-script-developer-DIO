@@ -1,6 +1,6 @@
-let preco = 5.60;
-let gastoMedio = 1;
-let distancia = 150;
+let precoCombustivel = 5.79;
+const KmPorLitro = 12;
+let distanciaEmKm = 1580;
 
 
-console.log("o valor gasto será de R$ " + (preco * gastoMedio * distancia));
+console.log ("o valor gasto será de R$ " + (precoCombustivel * (distanciaEmKm / KmPorLitro)).toFixed(2)); // corigindo as casas decimais para 2, o padrao do real.
