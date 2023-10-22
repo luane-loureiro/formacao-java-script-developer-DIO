@@ -174,6 +174,24 @@ Classificação:
 
 ### Resoluçao do Exercício 1
 
+```
+let nota1 = 10;
+let nota2 = 10;
+let nota3 = 10;
+let media = ((nota1+nota2+nota3)/3);
+
+if (media < 5){
+    console.log ("Media " + media.toFixed(2) + ", reprovado");
+} else if (media >=5 && media < 7) {
+    console.log ("Media " + media.toFixed(2) + ", está de recuperação");
+} else if ( media >= 7 && media != 10) {
+    console.log ("Media " + media.toFixed(2) + ", aprovado");
+}else {
+    console.log ("Media " + media.toFixed(2) + ", Parabéns! Conseguiu nota máxima, aprovado com louvor");
+}
+
+```
+
 ### Exercício 2 - Cálculo IMC
 O IMC – Indice de Massa Corporal é um critério da Organização Mundial de Saúde para dar uma indicação sobre a condição de peso de uma pessoa adulta. 
 
@@ -191,6 +209,30 @@ IMC em adultos Condição:
 - 
 ### Resolução do exerício 2
 
+```
+let peso = 68;
+let altura =1.68;
+
+let imc = (peso)/(Math.pow(altura,2)); // pode-se substituir o altura*altura pela função matecmática Pow, a função Math.pow() retorna a base elevada ao expoente.
+
+if (imc < 18.5){
+    console.log ("Seu imc é " + imc.toFixed(2) + ", Você está baixo do peso.");
+}
+ else if (imc >=18.5 && imc < 25) {
+    console.log ("Seu imc é " + imc.toFixed(2) + ", está com o Peso normal");
+ }
+ else if (imc >= 25 && imc < 30) {
+    console.log ("Seu imc é " + imc.toFixed(2) + ", Você está Acima do peso");
+ }
+ else if (imc >= 30 && imc < 40) {
+    console.log ("Seu imc é " + imc.toFixed(2) + ", Você está Obeso");
+ }
+ else {
+    console.log ("Seu imc é " + imc.toFixed(2) + ", Cuidado, você está com Obesidade Grave");
+ }
+
+```
+
 ### Exercício 3 - Valor Pago de um Produto
 Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a escolha da condição de pagamento. 
 Utilize os códigos da tabela a seguir para ler qual a condição de pagamento escolhida e efetuar o cálculo adequado.
@@ -203,6 +245,26 @@ Código Condição de pagamento:
 
 ### Resolução do Exercício 3
 
+```
+let precoProduto = 200;
 
+let p1 = "debito";
+let p2 = "dinheiro ou Pix" ;
+let p3 = "credito 2x" ;
+let p4 = "credito" ;
+
+let pagamento = p4;
+
+if (pagamento===p1) {
+    console.log (" forma de pagamento " + p1 + ", valor a pagar R$" + (precoProduto - (precoProduto * 0.1)));
+} else if (pagamento===p2) {
+    console.log (" forma de pagamento " + p2 + ", valor a pagar R$" + (precoProduto - (precoProduto * 0.15)));
+} else if (pagamento===p3) {
+    console.log (" forma de pagamento" + p3 + ", valor a pagar R$" + (precoProduto));
+} else {
+    console.log (" forma de pagamento "+ p4 + ", valor a pagar R$" + (precoProduto + (precoProduto * 0.1)));
+}
+
+```
 
 
